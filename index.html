@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-  <h1>Dr. Deepak Kumar Jain</h1>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>  | Homepage</title>
+  <title>Deepak Kumar Jain | Homepage</title>
+
   <style>
     body {
       margin: 0;
@@ -16,38 +16,51 @@
 
     .container {
       width: 90%;
-      max-width: 1000px;
-      margin: 0 auto;
+      max-width: 1100px;
+      margin: 40px auto;
     }
 
-    header {
-      border-bottom: 1px solid #ddd;
-      padding: 20px 0 10px;
+    .main {
+      display: flex;
     }
 
-    .site-title {
-      font-size: 34px;
-      font-weight: bold;
-      margin-bottom: 15px;
+    /* LEFT SIDEBAR */
+    .sidebar {
+      width: 220px;
     }
 
-    nav a {
-      margin-right: 18px;
+    .sidebar h2 {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    .sidebar a {
+      display: block;
+      margin-bottom: 10px;
+      padding: 10px;
+      background-color: #0047b3;
+      color: white;
       text-decoration: none;
-      color: #0047b3;
-      font-weight: 500;
+      border-radius: 5px;
+      text-align: center;
     }
 
-    nav a:hover {
-      text-decoration: underline;
+    .sidebar a:hover {
+      background-color: #003080;
+    }
+
+    /* RIGHT CONTENT */
+    .content {
+      flex: 1;
+      margin-left: 40px;
     }
 
     .hero {
       display: flex;
       gap: 30px;
-      padding: 35px 0;
       align-items: flex-start;
       flex-wrap: wrap;
+      margin-bottom: 30px;
     }
 
     .hero img {
@@ -56,11 +69,6 @@
       object-fit: cover;
       border-radius: 8px;
       border: 1px solid #ccc;
-    }
-
-    .hero-text {
-      flex: 1;
-      min-width: 260px;
     }
 
     .hero-text h1 {
@@ -85,7 +93,7 @@
 
     section h2 {
       margin-bottom: 10px;
-      font-size: 28px;
+      font-size: 26px;
     }
 
     ul {
@@ -96,14 +104,10 @@
       margin-bottom: 10px;
     }
 
-    .news li {
-      margin-bottom: 8px;
-    }
-
     footer {
       border-top: 1px solid #ddd;
       margin-top: 30px;
-      padding: 20px 0 40px;
+      padding-top: 15px;
       color: #666;
       font-size: 14px;
     }
@@ -113,85 +117,105 @@
     }
   </style>
 </head>
+
 <body>
+
   <div class="container">
-    <header>
-      <div class="site-title">Deepak Kumar Jain</div>
-      <nav>
+    <div class="main">
+
+      <!-- LEFT SIDEBAR -->
+      <div class="sidebar">
+        <h2>Menu</h2>
         <a href="#home">Home</a>
         <a href="#education">Education</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#news">News</a>
         <a href="#contact">Contact</a>
-      </nav>
-    </header>
-
-    <section class="hero" id="home">
-      <img src="your-photo.jpg" alt="D" />
-      <div class="hero-text">
-        <h1>Deepakk Jain</h1>
-        <p>
-          I am Currently serving as an Associate Professor at Dalian University of Technology, Dalian, China
-        </p>
-
-        <p>
-          Department / College Name<br />
-          City, Country
-        </p>
-
-        <div class="links">
-          <a href="mailto:yourmail@example.com">Email</a>
-          <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-          <a href="https://scholar.google.com/" target="_blank">Google Scholar</a>
-          <a href="#" target="_blank">CV</a>
-        </div>
       </div>
-    </section>
 
-    <section id="education">
-      <h2>Education</h2>
-      <ul>
-        <li><strong>B.Tech / Degree Name</strong>, College Name, Year - Year</li>
-        <li><strong>School Name</strong>, Year - Year</li>
-      </ul>
-    </section>
+      <!-- RIGHT CONTENT -->
+      <div class="content">
 
-    <section id="experience">
-      <h2>Work Experience</h2>
-      <ul>
-        <li><strong>Intern / Role</strong>, Organization Name, Dates</li>
-        <li><strong>Research Assistant / Project Role</strong>, Lab or Group, Dates</li>
-      </ul>
-    </section>
+        <!-- HERO SECTION -->
+        <section class="hero" id="home">
+          <img src="your-photo.jpg" alt="Profile Photo" />
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>Project 1:</strong> Short description of your project.</li>
-        <li><strong>Project 2:</strong> Short description of your project.</li>
-        <li><strong>Project 3:</strong> Short description of your project.</li>
-      </ul>
-    </section>
+          <div class="hero-text">
+            <h1>Dr. Deepak Kumar Jain</h1>
 
-    <section id="news">
-      <h2>News</h2>
-      <ul class="news">
-        <li>[Apr 2026] Added my new academic homepage.</li>
-        <li>[Mar 2026] Completed a new project on embedded systems.</li>
-        <li>[Feb 2026] Started learning GitHub Pages and web design.</li>
-      </ul>
-    </section>
+            <p>
+              I am currently serving as an Associate Professor at 
+              Dalian University of Technology, Dalian, China.
+            </p>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: yourmail@example.com</p>
-      <p>GitHub: github.com/yourusername</p>
-    </section>
+            <p>
+              Department Name<br />
+              Dalian University of Technology<br />
+              China
+            </p>
 
-    <footer>
-      © 2026 Deepakk Jain
-    </footer>
+            <div class="links">
+              <a href="mailto:yourmail@example.com">Email</a>
+              <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+              <a href="https://scholar.google.com/" target="_blank">Google Scholar</a>
+              <a href="#">CV</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section id="education">
+          <h2>Education</h2>
+          <ul>
+            <li><strong>PhD</strong> – Your University</li>
+            <li><strong>M.Tech</strong> – Your University</li>
+            <li><strong>B.Tech</strong> – Your College</li>
+          </ul>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section id="experience">
+          <h2>Work Experience</h2>
+          <ul>
+            <li><strong>Associate Professor</strong>, Dalian University of Technology</li>
+            <li><strong>Previous Role</strong>, Organization Name</li>
+          </ul>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects">
+          <h2>Projects</h2>
+          <ul>
+            <li><strong>Project 1:</strong> Short description</li>
+            <li><strong>Project 2:</strong> Short description</li>
+            <li><strong>Project 3:</strong> Short description</li>
+          </ul>
+        </section>
+
+        <!-- NEWS -->
+        <section id="news">
+          <h2>News</h2>
+          <ul>
+            <li>[2026] Created my academic homepage</li>
+            <li>[2025] Published research paper</li>
+          </ul>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact">
+          <h2>Contact</h2>
+          <p>Email: yourmail@example.com</p>
+          <p>GitHub: github.com/yourusername</p>
+        </section>
+
+        <footer>
+          © 2026 Dr. Deepak Kumar Jain
+        </footer>
+
+      </div>
+    </div>
   </div>
+
 </body>
 </html>
